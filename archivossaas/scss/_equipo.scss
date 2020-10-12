@@ -1,0 +1,68 @@
+.equipo {
+	margin: 150px;
+	background: $baseColor;
+	padding: auto;
+	.member {
+		margin-bottom: 20px;
+		overflow: hidden;
+		text-align: center;
+		border-radius: 5px;
+		background: $baseColor;
+		box-shadow: 0px 2px 15px $shadow;
+		.member-img {
+			position: relative;
+			overflow: hidden;
+		}
+		.social {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			height: 40px;
+			opacity: 0;
+			transition: ease-in-out 0.3s;
+			text-align: center;
+			background:$baseColor;
+			a {
+				transition: color 0.3s;
+				color: $vartexto;
+				margin: 0 10px;
+				padding-top: 8px;
+				display: inline-block;
+				&:hover {
+					color: $baseColorLight;
+				}
+			}
+			i {
+				font-size: 18px;
+				margin: 0 2px;
+			}
+		}
+		.member-info {
+			padding: 25px 25px;
+			h4 {
+				font-weight: 700;
+				margin-bottom: 5px;
+				font-size: 18px;
+				color: $vartexto;
+			}
+			span {
+				display: block;
+				font-size: 13px;
+				font-weight: 400;
+				color: $varspan;
+			}
+			p {
+				font-style: italic;
+				font-size: 14px;
+				line-height: 26px;
+				color: $vartexto;
+			}
+		}
+		&:hover {
+			.social {
+				opacity: 1;
+			}
+		}
+	}
+}

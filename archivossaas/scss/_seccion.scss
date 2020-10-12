@@ -1,0 +1,46 @@
+section {
+	box-shadow: 0px 2px 15px $shadow;
+	padding: 60px 0;
+}
+.section-bg {
+	background-color:$baseColor;
+}
+.section-title {
+	margin-top: 100px;
+	text-align: center;
+	padding-bottom: 30px;
+	h2 {
+		margin-top: 50px;
+		font-size: 13px;
+		letter-spacing: 1px;
+		font-weight: 700;
+		padding: 8px 20px;
+		line-height: 1;
+		margin: 0;
+		background: rgb(214, 229, 235);
+		color: $title-color;
+		display: inline-block;
+		text-transform: uppercase;
+		border-radius: 50px;
+	}
+	h3 {
+		margin: 15px 0 0 0;
+		font-size: 32px;
+		font-weight: 700;
+		span {
+			color: $title-color;
+		}
+	}
+	p {
+		margin: 15px auto 0 auto;
+		font-weight: 600;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.section-title {
+		p {
+			width: 50%;
+		}
+	}
+}

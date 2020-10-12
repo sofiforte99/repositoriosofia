@@ -1,0 +1,33 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: $rob;
+	color: $varbody;
+}
+a {
+	color: $title-color;
+	&:hover {
+		color: $baseColorLight;
+		text-decoration: none;
+	}
+}
+h1 {
+	font-family: $rob;
+}
+h2 {
+	font-family: $rob;
+}
+h3 {
+	font-family: $rob;
+}
+h4 {
+	font-family: $rob;
+}
+h5 {
+	font-family: $rob;
+}
+h6 {
+	font-family:$rob;
+}
+

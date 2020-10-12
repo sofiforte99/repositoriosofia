@@ -1,0 +1,70 @@
+article{
+  display:flex;
+}
+.caja{
+  box-sizing: border-box;
+  padding:8px;
+  width: 450px;
+  height: 150px;
+  position: relative;
+  border:1px solid black;
+}
+
+
+$mapa: (
+    uno:#f08080,
+    dos:#f4978e,
+    tres:#f8ad9d,
+    cuatro:#fab899,
+    cinco:#fac699
+  );
+
+@each $clase, $color in $mapa {
+  .caja.#{$clase}{
+     background-color: $color;
+    &:before{
+      position:fixed;
+      bottom:-30px;
+      left:0px;
+      content:'color: #{$color}';
+    }
+  }
+}
+
+@media all and (max-width: 768px)
+{ 
+  article{
+    display:flex;
+  }
+  .caja{
+    box-sizing: border-box;
+    padding:8px;
+    font-size: 14px;
+    width: 100px;
+    height: 150px;
+    border:1px solid black;
+  }
+  
+  
+  $mapa: (
+      uno:#f08080,
+      dos:#f4978e,
+      tres:#f8ad9d,
+      cuatro:#fab899,
+      cinco:#fac699
+    );
+  
+  @each $clase, $color in $mapa {
+    .caja.#{$clase}{
+       background-color: $color;
+      &:before{
+        position:fixed;
+        bottom:-30px;
+        left:0px;
+        content:'color: #{$color}';
+      }
+    }
+  }
+}
+
+

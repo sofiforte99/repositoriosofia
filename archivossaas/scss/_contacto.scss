@@ -1,0 +1,75 @@
+@-webkit-keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.contact {
+	.info {
+		box-shadow: 0px 2px 15px $shadow;
+		width: 100%;
+		background:$baseColor;
+		i {
+			font-size: 20px;
+			color: $baseColorLight;
+			float: left;
+			width: 44px;
+			height: 44px;
+			background:$baseColor;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50px;
+			transition: all 0.3s ease-in-out;
+		}
+		h4 {
+			padding: 0 0 0 60px;
+			font-size: 22px;
+			font-weight: 600;
+			margin-bottom: 5px;
+			color: $vartexto;
+		}
+		p {
+			padding: 0 0 0 60px;
+			margin-bottom: 0;
+			font-size: 14px;
+			color: $vartexto;
+		}
+		.email {
+			margin-top: 40px;
+			&:hover {
+				i {
+					background: $baseColorLight;
+					color: $baseColor;
+				}
+			}
+		}
+		.phone {
+			margin-top: 40px;
+			&:hover {
+				i {
+					background:$baseColorLight;
+					color: $baseColor;
+				}
+			}
+		}
+		.address {
+			&:hover {
+				i {
+					background: $baseColorLight;
+					color: $baseColor;
+				}
+			}
+		}
+	}
+}

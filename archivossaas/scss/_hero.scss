@@ -1,0 +1,101 @@
+#hero {
+	width: 100%;
+	height: 100vh;
+	background-color: $varbasic;
+	background-image: url(https://newevolutiondesigns.com/images/inspiration/rik-oostenbroek-flowerbomb-5.jpg);
+	background-size: cover;
+	position: relative;
+	&:before {
+		content: "";
+		background:$varhero;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.hero-container {
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		padding: 0 15px;
+	}
+	h3 {
+		color:$baseColor;
+		font-size: 26px;
+		padding: 10px 30px;
+		margin-bottom: 30px;
+		border-radius: 50px;
+		text-shadow: 2px 2px 4px #000000;
+	}
+	h1 {
+		margin: 0 0 10px 0;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 56px;
+		text-transform: uppercase;
+		padding: 50px;
+		color: $lightcoral;
+		text-shadow: 2px 2px 4px #000000;
+		border-radius: 15px;
+		&:hover{
+			color: $white;
+		}
+	}
+	h2 {
+		color: $baseColor;
+		margin-bottom: 40px;
+		font-size: 24px;
+		text-shadow: 2px 2px 4px #000000;
+	}
+	.btn-get-started {
+		font-family: $rob;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 13px;
+		letter-spacing: 1px;
+		display: inline-block;
+		padding: 8px 30px 9px 30px;
+		border-radius: 50px;
+		transition: 0.5s;
+		border: 2px solid $lightcoral;
+		color:$baseColor;
+		&:hover {
+			background: $vardestacado;
+			border: 2px solid $vardestacado;
+		}
+	}
+}
+@media all and (min-width: 1024px) {
+	#hero {
+		background-attachment: fixed;
+	}
+}
+@media all and (max-width: 768px) {
+	#hero {
+		h3 {
+			font-size: 22px;
+		}
+		h1 {
+			font-size: 28px;
+			line-height: 36px;
+		}
+		h2 {
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 30px;
+		}
+	}
+}
+@media (max-height: 500px) {
+	#hero {
+		height: 150vh;
+	}
+}
